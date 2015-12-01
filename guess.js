@@ -5,15 +5,13 @@ function guessOne(){
   // Get a guess from the player
   var guess = document.getElementById("guess").value;
 
-  if (guess == randomNumber){
-    document.getElementById("message").innerHTML= "It took you " +guessCount+ " guesses";
-    return;  // prevents saying 'ran out' if guessed in last round
-  }
+  // Section 1: winning condition
+  // If the user correctly guesses the number we're looking for, we need to show them a text telling them they won.
+  // Also, show the user how many guesses it took them to guess the correct number.
 
   // Section 2: losing condition
   // If the user doesn't guess the correct number, we need to tell them this in a message.
   // Also, show them a text stating that their guess was either higher or lower than the number we're looking for.
-  // Make sure you keep track of how many guesses a user did. We'll need that information in the next section!
 
   // Section 3: Game ending
   // The game ends when the player has reached the maximum number of guesses without guessing the number we're looking for.
