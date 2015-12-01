@@ -1,3 +1,4 @@
+var guessCount=0;
 var MAX_GUESSES=6;
 var randomNumber = Math.floor((Math.random() * 100) + 1); //picks a random number between 1 and 100
 
@@ -12,8 +13,8 @@ function guessOne(){
 
   // Section 2: losing condition
   // If the user doesn't guess the correct number, we need to tell them this in a message.
-  // Also, show them a text stating that their guess was either higher or lower than the number we're looking for.
-  // Make sure you keep track of how many guesses a user did. We'll need that information in the next section!
+  // Also, show them a text saying that their guess was either higher or lower than the number we're looking for.
+  // Make sure you keep track of how many guesses a user did.
 
   // Section 3: Game ending
   // The game ends when the player has reached the maximum number of guesses without guessing the number we're looking for.
