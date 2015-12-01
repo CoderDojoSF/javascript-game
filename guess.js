@@ -1,4 +1,3 @@
-var guessCount = 0;
 var MAX_GUESSES=6;
 var randomNumber = Math.floor((Math.random() * 100) + 1); //picks a random number between 1 and 100
 
@@ -9,12 +8,12 @@ function guessOne(){
   if (guess == randomNumber){
     document.getElementById("message").innerHTML= "It took you " +guessCount+ " guesses";
     return;  // prevents saying 'ran out' if guessed in last round
-  } else if (guess < randomNumber){
-    document.getElementById("message").innerHTML= "Guess again. The number is higher than "+guess;
-  } else {
-    document.getElementById("message").innerHTML= "Guess again. The number is lower than "+guess;
   }
-  guessCount += 1;
+
+  // Section 2: losing condition
+  // If the user doesn't guess the correct number, we need to tell them this in a message.
+  // Also, show them a text stating that their guess was either higher or lower than the number we're looking for.
+  // Make sure you keep track of how many guesses a user did. We'll need that information in the next section!
 
   // Section 3: Game ending
   // The game ends when the player has reached the maximum number of guesses without guessing the number we're looking for.
