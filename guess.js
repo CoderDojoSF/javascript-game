@@ -16,10 +16,10 @@ function guessOne(){
   }
   guessCount += 1;
 
-  if (guessCount >= MAX_GUESSES) {
-    document.getElementById("message").innerHTML= "Sorry, you ran out of guesses.  The number was " + randomNumber;
-    document.getElementById("game").style.visibility="hidden";
-  }
+  // Section 3: Game ending
+  // The game ends when the player has reached the maximum number of guesses without guessing the number we're looking for.
+  // Define the end of the game. Show a message to the user that they ran out of guesses and tell them what the number was.
+  // Hide the input field and guess button so they can't take another guess.
 
   // Lend a hand by clearing out their last guess
   document.getElementById("guess").value = "";
